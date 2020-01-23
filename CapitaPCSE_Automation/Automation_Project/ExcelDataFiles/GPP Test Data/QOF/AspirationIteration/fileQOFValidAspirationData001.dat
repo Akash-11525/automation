@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericPaymentMessage xmlns="http://www.doh.gov.uk/schema/cqrs/ssd/v1_1">
+    <Submission>
+        <SourceId>CQRS</SourceId>
+        <MessageVersion>1_1</MessageVersion>
+        <MessageType>GenericPaymentMessage</MessageType>
+        <UUID>af6006c9-875d-4efc-ae5f-2f27e8e6d938</UUID>
+        <MessageDateTime>2010-10-13T14:29:08Z</MessageDateTime>
+        <UserId>SSD_PROCESSOR</UserId>
+        <Domain>Test</Domain>
+    </Submission>
+    <PaymentDetails>
+        <TransactionId>1834111</TransactionId>
+        <Organisation Role="ServiceProvider">
+            <PracticeIdentifier>M81010</PracticeIdentifier>
+            <Name>Kidderminister Medical Centre</Name>
+        </Organisation>
+        <Organisation Role="CommissioningOrganisation">
+            <OtherOrgIdentifier>28X</OtherOrgIdentifier>
+            <Name>NHSCB-LAT 4</Name>
+        </Organisation>
+        <FinancialYear>
+            <StartDate>2018-04-01</StartDate>
+            <EndDate>2019-03-31</EndDate>
+        </FinancialYear>
+        <PaymentPaycode>QUASPG</PaymentPaycode>
+        <GrossPaymentAmount>18000.00</GrossPaymentAmount>
+        <Iteration>2</Iteration>
+        <Periodicity>I</Periodicity>
+        <PaymentDate>
+            <StartDate>2016-04-01</StartDate>
+            <EndDate>2017-03-31</EndDate>
+        </PaymentDate>
+    </PaymentDetails>
+</GenericPaymentMessage>

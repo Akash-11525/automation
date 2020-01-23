@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCSE-OP-BS-GOS5-Claim-v2 Conversation-ID="80ACEAAF-710F-42DF-AD3C-A77505A5A93E" Message-Date-Time="2016-09-29T19:01:23" Message-Revision="0.1" PSK="0CAAFF54-05DC-44E4-A20F-1EDE0044A542" xmlns="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS PCSE-OP-BS-GOS5-Claim-v2.xsd">
+	<Claim-Message Unique-Message-ID="AEF7DCD1-CEC4-42F3-842E-44C231DF7470" Scanned-Claim-Reference="pcs_scan_200000001_1609291901" Claim-Date-Time="2016-12-31T19:01:23" Claim-Version-ID="GOS5~01.18~1.0" I-Code="ABC-123-233330000001"
+		P-Code="704A57E2-2685-476C-9DF7-4C59B27470DC">
+		<Part1-Patient-Details>
+			<Patient-Details>
+				<Title>DEAN</Title>
+				<DOB>01011972</DOB>
+				<Surname>Williams123456789123456789123456789</Surname>
+				<First-Names>Jessica12345678912345678912</First-Names>
+				<Previous-Surname>OtterMan</Previous-Surname>
+				<Address>315 Scattergate Cress, Park Hall Rd, Gardens, Cumbernauld</Address>
+				<PostCode>DN551PT</PostCode>
+				<NHSNumber>0123455678</NHSNumber>
+				<NINumber>AA123456Z</NINumber>
+			</Patient-Details>
+			<Last-Sight-Test>
+				<DateOfLastTest></DateOfLastTest>
+				<FirstTest>N</FirstTest>
+				<NotKnown>Y</NotKnown>
+			</Last-Sight-Test>
+			<Eligibility>
+				<Patient>Y</Patient>
+				<Partner>N</Partner>
+				<HC3-Certificate-Number>123456789</HC3-Certificate-Number>
+				<Private-Test-Cost-Pounds>20</Private-Test-Cost-Pounds>
+				<Private-Test-Cost-Pence>00</Private-Test-Cost-Pence>
+				<Will-Pay-Amount>Y</Will-Pay-Amount>
+				<Cannot-Attend>N</Cannot-Attend>
+				<Cannot-Attend-Because>Dog ate homework</Cannot-Attend-Because>
+			</Eligibility>
+			<Ethnicity>
+				<White-Other>N</White-Other>
+				<White-Irish>N</White-Irish>
+				<White-British>N</White-British>
+				<Other-Other>N</Other-Other>
+				<Other-NotStated>N</Other-NotStated>
+				<Other-Chinese>N</Other-Chinese>
+				<Mixed-WhiteBlackCaribbean>N</Mixed-WhiteBlackCaribbean>
+				<Mixed-WhiteBlackAfrican>N</Mixed-WhiteBlackAfrican>
+				<Mixed-WhiteAsian>N</Mixed-WhiteAsian>
+				<Mixed-Other>N</Mixed-Other>
+				<Black-Other>N</Black-Other>
+				<Black-Caribbean>N</Black-Caribbean>
+				<Black-African>N</Black-African>
+				<Asian-Pakistani>N</Asian-Pakistani>
+				<Asian-Other>N</Asian-Other>
+				<Asian-Indian>N</Asian-Indian>
+				<Asian-Bangladeshi>N</Asian-Bangladeshi>
+			</Ethnicity>
+
+		</Part1-Patient-Details>
+		<Part2-Patient-Declaration>
+			<Declaration>
+				<Patient>Y</Patient>
+				<Parent>N</Parent>
+				<CarerGuardian>N</CarerGuardian>
+				<Patient-Declaration-Bulk-Scan-Signature-Reference>pcs_scan_200000005_1610021901</Patient-Declaration-Bulk-Scan-Signature-Reference>
+				<Patient-Declaration-Date>31122016</Patient-Declaration-Date>
+				<Patient-Declaration-Name>H OTTER</Patient-Declaration-Name>
+				<Patient-Declaration-Address>61 THE HOLT RIVERMOUTH~CUMBRIA</Patient-Declaration-Address>
+				<Patient-Declaration-Postcode>DN551PT</Patient-Declaration-Postcode>
+			</Declaration>
+		</Part2-Patient-Declaration>
+		<Part3-Performers-Declaration>
+			<Outcome-Voucher-Type>
+				<Referred-GP-Ophthalmic-Hospital>Y</Referred-GP-Ophthalmic-Hospital>
+				<New-Changed-Prescription-Issued>N</New-Changed-Prescription-Issued>
+				<Statement-Showing-No-Prescription-Required>N</Statement-Showing-No-Prescription-Required>
+				<Unchanged-Prescription-Issued>Y</Unchanged-Prescription-Issued>
+				<Voucher-Issued>N</Voucher-Issued>
+				<FirstVoucher>
+					<Voucher-Type></Voucher-Type>
+					<Complex>N</Complex>
+					<Prism>N</Prism>
+					<Tint>N</Tint>
+				</FirstVoucher>
+				<SecoundVoucher>
+					<Voucher-Type></Voucher-Type>
+					<Complex>N</Complex>
+					<Prism>N</Prism>
+					<Tint>N</Tint>
+				</SecoundVoucher>
+
+				<FirstPatientAtAddress>N</FirstPatientAtAddress>
+				<SecondPatientAtAddress>Y</SecondPatientAtAddress>
+				<ThirdPatientAtAddress>N</ThirdPatientAtAddress>
+
+				<SightTestDate>31122016</SightTestDate>
+				<RetestCodeIntegral></RetestCodeIntegral>
+				<RetestCodeFractional></RetestCodeFractional>
+
+			</Outcome-Voucher-Type>
+
+			<Performer-Declaration>
+				<Performer-Name>Boots</Performer-Name>
+				<Performer-List-Number>6769386</Performer-List-Number>
+				<Performer-Declaration-Bulk-Scan-Signature-Reference>pcs_scan_200000005_1610021901</Performer-Declaration-Bulk-Scan-Signature-Reference>
+				<Performer-Declaration-Date>31122016</Performer-Declaration-Date>
+			</Performer-Declaration>
+
+			<Claim>
+				<Private-Charge-NHS-Sight-Test>
+					<Pounds>20</Pounds>
+					<Pence>00</Pence>
+				</Private-Charge-NHS-Sight-Test>
+
+				<Private-Charge-NHS-Domicilary-Visit>
+					<Pounds>37</Pounds>
+					<Pence>56</Pence>
+				</Private-Charge-NHS-Domicilary-Visit>
+
+				<Max-Claimable>
+					<Pounds>47</Pounds>
+					<Pence>56</Pence>
+				</Max-Claimable>
+
+				<Patients-Contribution>
+					<Pounds>20</Pounds>
+					<Pence>00</Pence>
+				</Patients-Contribution>
+
+				<Total-Claim>
+					<Pounds>27</Pounds>
+					<Pence>56</Pence>
+				</Total-Claim>
+
+
+				<Sight-Test-Claim-Address>
+					<Claim-Address1>61 THE HOLT</Claim-Address1>
+					<Claim-Address2>RIVERMOUTH CUMBRIA</Claim-Address2>
+					<PostCode>DN551PT</PostCode>
+				</Sight-Test-Claim-Address>
+			</Claim>
+			<Contractor-Declaration>
+				<Contractor-Declaration-Bulk-Scan-Signature-Reference>pcs_scan_200000005_1610021901</Contractor-Declaration-Bulk-Scan-Signature-Reference>
+				<Contractor-Declaration-Date>31122016</Contractor-Declaration-Date>
+				<Contractor-Declaration-Name></Contractor-Declaration-Name>
+				<Contractor-Name>LONDON COMMISSIONING REGION</Contractor-Name>
+				<Organisation-Code>TP19Y</Organisation-Code>
+			</Contractor-Declaration>
+		</Part3-Performers-Declaration>
+
+	</Claim-Message>
+</PCSE-OP-BS-GOS5-Claim-v2>

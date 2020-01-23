@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  Test on Chrome Second</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test on Chrome Second</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 09 18:09:01 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>903 seconds (903011 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testscripts.PL_CreateApp_MedicalScripts.CreateApplication_MedicalList()'><b>CreateApplication_MedicalList</b><br>Test class: testscripts.PL_CreateApp_MedicalScripts<br>Parameters: Chrome, Test, PCSE, true<br/>
+<a href="#Output-1747880040" onClick='toggleBox("Output-1747880040", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1747880040" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1747880040">
+The user MedicalAuto18097975@capitapcsetest.comis successfully registerted.<br/>
+The Personal detail is completed<br/>
+The Personal detail is completed<br/>
+D:\CapitaPCSEAutomation_Akshay\TestAutomation\PCSE_Automation_Maven\Automation_Project\Screenshots\09012019\CreateApplication_MedicalList_09012019_182401.png<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Throwable: Steps Failed (2)
+(1)verify.VerificationError:The Expected Document is not loaded on Employment History  expected [true] but found [false]
+(2)verify.VerificationError:The Employment History is not completed expected [true] but found [false]
+
+Failure 1 of 2
+verify.VerificationError: The Expected Document is not loaded on Employment History  expected [true] but found [false]
+	at verify.Verify.verifyTrue(Verify.java:28)
+	at testscripts.PL_CreateApp_MedicalScripts.CreateApplication_MedicalList(PL_CreateApp_MedicalScripts.java:609)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Failure 2 of 2
+verify.VerificationError: The Employment History is not completed expected [true] but found [false]
+	at verify.Verify.verifyTrue(Verify.java:28)
+	at testscripts.PL_CreateApp_MedicalScripts.CreateApplication_MedicalList(PL_CreateApp_MedicalScripts.java:624)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1747880040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1747880040'><pre>java.lang.Throwable: Steps Failed (2)
+(1)verify.VerificationError:The Expected Document is not loaded on Employment History  expected [true] but found [false]
+(2)verify.VerificationError:The Employment History is not completed expected [true] but found [false]
+
+Failure 1 of 2
+verify.VerificationError: The Expected Document is not loaded on Employment History  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at verify.Verify.verifyTrue(Verify.java:28)
+	at testscripts.PL_CreateApp_MedicalScripts.CreateApplication_MedicalList(PL_CreateApp_MedicalScripts.java:609)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Failure 2 of 2
+verify.VerificationError: The Employment History is not completed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at verify.Verify.verifyTrue(Verify.java:28)
+	at testscripts.PL_CreateApp_MedicalScripts.CreateApplication_MedicalList(PL_CreateApp_MedicalScripts.java:624)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>897</td>
+<td>testscripts.PL_CreateApp_MedicalScripts@617faa95</td></tr>
+</table><p>
+</body>
+</html>

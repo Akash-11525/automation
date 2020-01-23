@@ -1,0 +1,6 @@
+Content-Type: application/octet-stream
+Mex-From: Sender
+Mex-To: Recipient
+Mex-WorkflowID: Workflow
+Mex-MessageID: {0:d}
+Mex-FileName: fileQOFValidAspirationData001.dat

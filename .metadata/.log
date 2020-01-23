@@ -1,0 +1,52 @@
+!SESSION 2020-01-23 10:37:30.121 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file D:\TestAutomationWorkspace\.metadata\.bak_0.log
+Created Time: 2020-01-23 10:38:21.571
+
+!ENTRY org.eclipse.osgi 2 0 2020-01-23 10:38:21.573
+!MESSAGE While loading class "com.microsoft.tfs.client.eclipse.util.TeamUtils$UnexpectedProjectConfigurationException", thread "Thread[Worker-7,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-3,5,main]" to finish starting bundle "com.microsoft.tfs.client.eclipse_14.119.2.201706191916 [991]". To avoid deadlock, thread "Thread[Worker-7,5,main]" is proceeding but "com.microsoft.tfs.client.eclipse.util.TeamUtils$UnexpectedProjectConfigurationException" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="14.119.2.201706191916"; osgi.identity="com.microsoft.tfs.client.eclipse"; singleton:="true" [id=991] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.microsoft.tfs.client.eclipse.project.ProjectRepositoryManager.shouldConnect(ProjectRepositoryManager.java:529)
+	at com.microsoft.tfs.client.eclipse.project.ProjectRepositoryManager.start(ProjectRepositoryManager.java:179)
+	at com.microsoft.tfs.client.eclipse.TFSEclipseClientPlugin$1.run(TFSEclipseClientPlugin.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	... 15 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.microsoft.tfs.client.eclipse.project.ProjectRepositoryManager.shouldConnect(ProjectRepositoryManager.java:529)
+	at com.microsoft.tfs.client.eclipse.project.ProjectRepositoryManager.start(ProjectRepositoryManager.java:179)
+	at com.microsoft.tfs.client.eclipse.TFSEclipseClientPlugin$1.run(TFSEclipseClientPlugin.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

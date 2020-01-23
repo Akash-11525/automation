@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testscripts.XML_BS_StagingCRMScripts">
+        <methods>
+          <include name="BS_GOS3_7068"/>
+          <include name="BS_GOS5_7170"/>
+          <include name="BS_GOS1_6745"/>
+          <include name="BS_GOS4_CR_19000"/>
+          <include name="BS_GOS3_7058"/>
+          <include name="BS_GOS4_5975"/>
+          <include name="XMLProcess_Duplicate_GOS1BS_GOS6PMS"/>
+          <include name="BS_GOS1_6453"/>
+          <include name="XMLProcess_Duplicate_GOS5"/>
+          <include name="XMLProcess_GOS6_PVN"/>
+          <include name="BS_GOS4_CR_19037"/>
+          <include name="XMLProcess_GOS1PMS_DuplicateGOS5"/>
+          <include name="BS_GOS6_11752"/>
+          <include name="BS_GOS6_11750"/>
+          <include name="patientSixteenGOS1Claim"/>
+        </methods>
+      </class> <!-- testscripts.XML_BS_StagingCRMScripts -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

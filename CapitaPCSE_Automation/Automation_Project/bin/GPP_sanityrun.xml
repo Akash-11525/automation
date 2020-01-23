@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3">
+<test name="Test on Chrome">
+<parameter name="browser" value="Chrome"/>
+<parameter name="environment" value="TEST"/>
+<parameter name="clientName" value="PCSE"/>
+<parameter name="evidence" value="True"/>
+<classes>
+<class name="testscripts.GPP_StandardClaimScripts">
+<methods>
+<!-- <include name="submitAndApproveLocumCoverCostClaim"/> -->
+<include name="verifyApproveRegistrarClaim"/>
+<include name="verifySubmitApproveRetainerClaim"/>
+<include name="verifySubmitApprovePremisesClaim"/>
+</methods>
+</class>
+<class name="testscripts.GPP_AdjustmentScripts">
+<methods>
+<include name="verifyBulkUpload"/>
+<include name="verifyPLForMultipleMonths"/>
+</methods>
+</class>
+<class name="testscripts.GPP_QOFScripts">
+<methods>
+<include name="verifyQOFDataFlow"/>
+<include name="validateDataInCRM"/>
+</methods>
+</class>
+<class name="testscripts.GPP_PensionsScripts">
+<methods>
+<include name="submitJoinerApplication"/>
+<include name="savePractitionerJoinerApplication"/>
+<include name="approveJoinerForm"/>
+</methods>
+</class>
+<class name="testscripts.GPP_SoloScripts">
+<methods>
+<include name="verifyEmploymentDetails"/>
+</methods>
+</class>
+<class name="testscripts.GPP_BreakInServiceScripts">
+<methods>
+<include name="verifyBreakInServiceFlow"/>
+</methods>
+</class>
+<class name="testscripts.GPP_AVCScripts">
+<methods>
+<include name="submitAVCForm"/>
+<include name="submitMPAVCForm"/>
+<include name="submitERRBOForm"/>
+</methods>
+</class>
+<class name="testscripts.GPP_SalaryChangeScripts">
+<methods>
+<include name="verifySalaryChangeFlow"/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>

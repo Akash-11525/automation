@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3"  parallel="methods">
+<test name="Test on Chrome">
+<parameter name="browser" value="Chrome"/>
+<parameter name="environment" value="CLONE"/>
+<parameter name="clientName" value="PCSE"/>
+<parameter name="evidence" value="True"/>
+<classes>
+<class name="testscripts.PL_CreateApp_DentalScripts">
+<methods>
+<include name="CreateApplication_Dental_DentistTraining"/>
+<include name="CreateApplication_Dental"/>
+<include name="CreateApplication_Dental_Foundationdentist"/>
+</methods>
+</class>
+<class name="testscripts.PL_CreateApp_OpthalmicScripts">
+<methods>
+<include name="CreateApplication_Ophthalmic"/>
+<include name="CreateApplication_Ophthalmic_medicalpractitioner"/>
+</methods>
+</class>
+<!-- <class name="testscripts.PL_CreateApp_MedicalScripts">
+<methods>
+<include name="CreateApplication_Medical_ArmedServicesType2"/>
+<include name="CreateApplication_MedicalList"/>
+<include name="CreateApplication_Medical_GPRegistrar"/>
+<include name="WithdrawApp_MedicalList"/>
+<include name="CreateApplication_Medical_ArmedServicesType1"/>
+</methods>
+</class>
+<class name="testscripts.PL_ProcessApp_MedicalScripts">
+<methods>
+<include name="NHSE_ReturntoNHSE"/>
+<include name="SendAppDossier_Approval_PCSEManagerReject"/>
+<include name="ApplicationIncomplete"/>
+<include name="SendAppDossier_Approval_PCSEManagerApprove"/>
+<include name="NHSE_AppApprove"/>
+<include name="NHSE_Defered"/>
+<include name="NHSE_Refused"/>
+</methods>
+</class> -->
+<class name="testscripts.PL_PerformerAppScripts">
+<methods>
+<!-- <include name="PerformerManagement_ChangePerfomerType_Dental"/>
+<include name="E2E_WithdrawPerformer"/> -->
+<include name="EditPerformerManagement"/>
+<!-- <include name="ChangeLocaloffice"/>
+<include name="ReassignLocaloffice_NHSE"/>
+<include name="ChangePratice"/>
+<include name="FutureDateDeath"/>
+<include name="PerformerManagement_24HoursApprove"/>
+<include name="PerformerManagement_ChangePerfomerType"/>
+<include name="PerformerManagement_ChangeNameAddTel"/>
+<include name="ChangePratice_NHSEREject"/>
+<include name="PerformerManagement_24HoursReject"/> -->
+</methods>
+</class>
+</classes>
+</test>
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

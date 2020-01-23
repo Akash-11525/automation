@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="2" verbose="3">
+<test name="Test on Chrome">
+<parameter name="browser" value="Chrome"/>
+<parameter name="environment" value="CLONE"/>
+<parameter name="clientName" value="PCSE"/>
+<parameter name="evidence" value="True"/>
+<classes>
+<class name="testscripts.PL_PerformerAppScripts">
+<methods>
+<include name="ChangePratice"/>
+<!-- <include name="ChangeLocaloffice"/> -->
+<!-- <include name="CreateApplication_Medical_GPRegistrar"/> -->
+<!-- <include name="CreateApplication_Medical_ArmedServicesType1"/>
+<include name="CreateApplication_Medical_ArmedServicesType2"/> -->
+</methods>
+</class>
+</classes>
+</test>
+</suite>

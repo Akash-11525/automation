@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3">
+<test name="Test on Internet Explorer">
+<parameter name="browser" value="Internet Explorer"/>
+<parameter name="environment" value="Environment 1"/>
+<parameter name="clientName" value="PCSE"/>
+<classes>
+<class name="testscripts.Feature2Scripts">
+<methods>
+<include name="automationScriptTwo"/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>

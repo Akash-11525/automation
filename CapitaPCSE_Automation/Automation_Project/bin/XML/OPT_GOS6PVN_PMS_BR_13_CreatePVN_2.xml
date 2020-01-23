@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCSE-OP-PMS-GOS6-PVN-Create-v2 xmlns="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS PCSE-OP-PMS-GOS6-PVN-Create-v2.xsd" Conversation-ID="1C1335FC-F3E2-49A9-AC12-AE66EDF59668" Message-Date-Time="2018-02-27T00:00:00.0" Message-Revision="0.1" PSK="0CAAFF54-05DC-44E4-A20F-1EDE0044A542" Organisation-Code="TP19Y" Unique-Message-ID="75A63438-9872-4E89-8E89-2C43A712DC42">
+    <Part1-Contractor-Details>
+        <Contractor-Name>Johns Discount Glass</Contractor-Name>
+        <Contractor-Contact-Name>John Smit</Contractor-Contact-Name>
+        <Notification-Date>2018-02-27</Notification-Date>
+    </Part1-Contractor-Details>
+    <Part2-Venue>
+        <Address>
+            <Claim-Address1>The Oaks</Claim-Address1>
+            <Claim-Address2>Silverdale Lane</Claim-Address2>
+            <Claim-Address3>Leeds</Claim-Address3>
+            <Claim-Address4></Claim-Address4>
+        </Address>
+        <PostCode>SW62NB</PostCode>
+        <Premises-Type>R</Premises-Type>
+        <Venue-Contact-Name>Alfred Road</Venue-Contact-Name>
+        <Date-Of-Visit>2018-03-01</Date-Of-Visit>
+        <Estimated-Time-Of-Visit>10:00:00.000</Estimated-Time-Of-Visit>
+        <Patient-Details>
+            <Patient>
+                <First-Names>Patient51</First-Names>
+                <Surname>Campbell</Surname>
+                <DOB>1945-12-10</DOB>
+            </Patient>
+			<Patient>
+                <First-Names>Patient52</First-Names>
+                <Surname>Campbell</Surname>
+                <DOB>1945-12-10</DOB>
+            </Patient>
+        </Patient-Details>
+    </Part2-Venue>
+</PCSE-OP-PMS-GOS6-PVN-Create-v2>

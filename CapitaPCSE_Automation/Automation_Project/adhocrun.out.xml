@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3">
+<parameter name="browser" value="Chrome"/>
+<parameter name="environment" value="Clone"/>
+<parameter name="clientName" value="PCSE"/>
+<parameter name="evidence" value="True"/>
+<test name="Tests on Chrome">
+<classes>
+<class name="testscripts.OP_GOS1ClaimScripts">
+<methods>
+<include name="patientunderSixteenwithUniversalCreditGOS1Claim"/>
+<include name="patientunderSixteenwithJobseekerAllowanceGOS1Claim"/>
+<include name="patientoverFourtywithPatientReceivesUniversalCreditGOS1Claim"/>
+<include name="patientoverSixtywithPartnerReceivesUniversalCreditGOS1Claim"/>
+<include name="patientStudentwithPartnerReceivesPensionCreditGOS1Claim"/>
+<include name="conflictingEleOptionGOS1Claim"/>
+<include name="patientUnderSixteenGOS1Claim"/>
+<include name="validateClaimNumberFormat"/>
+<include name="previousActionAndProgressIndicator"/>
+<include name="submitClaimInAbsenceOfRetestCode"/>
+<include name="patientoverSixtywithPartnerReceivesPensionCreditGOS1Claim"/>
+<include name="patientoverFourtywithPatientReceivesPensionCreditGOS1Claim"/>
+<include name="patientoverSixtywithPatientReceivesUniversalCreditGOS1Claim"/>
+<include name="submitClaimInAbsenceOfRetestCodePatientFourty"/>
+<include name="submitClaimInAbsenceOfRetestCodePatientAt69"/>
+</methods>
+</class> 
+<class name="testscripts.OP_GOS3ClaimScripts">
+<methods>
+<include name="distanceAndNearPrescriptionIsPassed"/>
+<include name="underDistancePrescriptionSPHlessThan10Diopters"/>
+<include name="underReadingPrescriptionSPHmoreThanDiopters"/>
+<include name="underDistancePrescriptionSPHMoreThan10"/>
+<include name="underReadingPrescriptionWithBifocalglasses"/>
+<include name="underReadingPrescriptionSPHof10"/>
+<include name="underReadingPrescriptionSPHMoreThan14"/>
+<include name="underReadingAndDistancePrescriptionWithVouchersDH"/>
+<include name="underDistancePrescriptionSPHLessThan6Diopters"/>
+<include name="TintAndPrismLensesSupplied"/>
+<include name="CenterDistanceOver55mm"/>
+<include name="CenterDistance55WithGlassSupplimentY"/>
+</methods>
+</class> 
+<class name="testscripts.OP_GOS4ClaimScripts">
+<methods>
+<include name="GOS4Claim_StudentAgeBelow18_SubmitClaim_WithComplexLense"/>
+<include name="GOS4Claim_VoucherWithDistAndReading"/>
+<include name="GOS4Claim_UnderDistanceSphPowerNotMoreThan6Diopters"/>
+<include name="GOS4Claim_sphPowerLessThan10AndCyPowermoreThan2Diopters"/>
+<include name="GOS4Claim_UnderReadingWithVoucherTypeB"/>
+<include name="GOS4Claim_UnderReadingAndDistancePrescPassedAsC"/>
+<include name="GOS4Claim_ReadingAdditonMoreThan4WithBifocal"/>
+<include name="GOS4Claim_UnderDistancePrescAsGWithBifocal"/>
+<include name="GOS4Claim_DistancePairWithRightLensAndFrontFrame"/>
+<include name="GOS4Claim_ValidationOnSupplierDetails"/>
+<include name="GOS4Claim_BifocalPairWithBothLensesWholeFrameSuppliment"/>
+<include name="GOS4Claim_NearPairWithLeftLensesWholeFrameSuppliment"/>
+<include name="GOS4Claim_DistancePairWithBothLensesSideFrameSuppliment"/>
+</methods>
+</class> 
+ <class name="testscripts.OP_GOS5ClaimScripts">
+<methods>
+<include name="validateDomiciliaryVisitFeeForSubsequentAddress"/>
+<include name="validateDomiciliaryVisitFeeForSecondAddress"/>
+<include name="validateClaimForSightTestDateWithinOneYearAndMore"/>
+<include name="validateDomiciliaryVisitFeeForFirstAddressvalidateDomiciliaryVisitFeeForFirstAddress"/>
+<include name="validateLowerOfPrivateChargeForSubsequentAddress"/>
+<include name="validateClaimForSightTestDateWithinOneYear"/>
+</methods>
+</class>  
+<class name="testscripts.OP_GOS6ClaimScripts">
+<methods>
+<include name="GOS6Claim_SuccessfulFlow"/>
+<include name="GOS6Claim_SuccessfulFlow_PaymentForSecondPatient"/>
+<include name="GOS6Claim_SuccessfulFlow_PaymentForThirdPatient"/>
+<include name="GOS6Claim_SuccessfulFlow_PatientBelow70YearsLastSightDateBefore2Years1day"/>
+<include name="validateReasonForLessThan48Hrs"/>
+</methods>
+</class>
+<class name="testscripts.PMS_GOS1_E2EScripts">
+<methods>
+<include name="GOS1_PMS_XML_VR_078"/>
+<include name="OPT_GOS1_XML_EC_5_1"/>
+<include name="OPT_GOS1_XML_EC_5_2"/>
+<include name="OPT_GOS1_XML_EC_5_3"/>
+<include name="OPT_GOS1_XML_EC_5_4"/>
+<include name="OPT_GOS1_XML_EC_5_5"/>
+</methods>
+</class>
+<class name="testscripts.PMS_GOS3_E2EScripts">
+<methods>
+<include name="OPT_GOS3_XML_BR_45"/>
+<include name="OPT_GOS3_XML_BR_48"/>
+<include name="OPT_GOS3_XML_BR_43"/>
+<include name="OPT_GOS3_XML_BR_46"/>
+<include name="OPT_GOS3_XML_BR_45"/>
+</methods>
+</class>
+<class name="testscripts.PMS_GOS4_E2EScripts">
+<methods>
+<include name="OPT_GOS4_XML_BR_149"/>
+<include name="OPT_GOS4_XML_BR_191"/>
+<include name="OPT_GOS4_XML_BR_63"/>
+<include name="OPT_GOS4_XML_BR_70"/>
+</methods>
+</class>
+<class name="testscripts.PMS_GOS5_E2EScripts">
+<methods>
+<include name="OPT_GOS5_XML_VR_034"/>
+<include name="OPT_GOS5_XML_BR_33"/>
+<include name="OPT_GOS5_XML_BR_11"/>
+<include name="OPT_GOS5_XML_BR_29"/>
+</methods>
+</class>
+<class name="testscripts.PMS_GOS6_E2EScripts">
+<methods>
+<include name="OPT_GOS6_XML_BR_36"/>
+<include name="OPT_GOS6_XML_BR_26"/>
+<include name="OPT_GOS6_XML_VR_185"/>
+<include name="OPT_GOS6_XML_VR_185_C2"/>
+</methods>
+</class>
+<class name="testscripts.BS_GOS1_E2EScripts">
+<methods>
+<include name="OPT_GOS1_BS_BR_39"/>
+<include name="OPT_GOS1_BS_BR_23"/>
+<include name="OPT_GOS1_BS_BR_63"/>
+<include name="OPT_GOS1_BS_BR_61"/>
+<include name="OPT_GOS1_BS_BR_67"/>
+<include name="OPT_GOS1_BS_BR_8"/>
+</methods>
+</class>
+<class name="testscripts.BS_GOS3_E2EScripts">
+<methods>
+<include name="OPT_GOS3_BS_BR_43"/>
+<include name="OPT_GOS3_BS_BR_45"/>
+<include name="OPT_GOS3_BS_BR_46"/>
+<include name="OPT_GOS3_BS_BR_48"/>
+</methods>
+</class>
+<class name="testscripts.BS_GOS5_E2EScripts">
+<methods>
+<include name="OPT_GOS5_BS_BR_10"/>
+<include name="OPT_GOS5_BS_VR_82"/>
+<include name="OPT_GOS5_BS_VR_80"/>
+<include name="OPT_GOS5_BS_BR_27"/>
+<include name="OPT_GOS5_BS_BR_21"/>
+<include name="OPT_GOS5_BS_BR_22"/>
+<include name="OPT_GOS5_BS_VR_81"/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>

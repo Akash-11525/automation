@@ -1,0 +1,4 @@
+Document	35
+Design	30
+Comm	1
+re-work	15

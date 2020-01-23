@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Adhoc Run Test Suite]">
+  <parameter name="environment" value="Test"/>
+  <parameter name="evidence" value="True"/>
+  <parameter name="clientName" value="PCSE"/>
+  <parameter name="browser" value="Chrome"/>
+  <test name="Tests on Chrome(failed)">
+    <classes>
+      <class name="testscripts.GPP_AVCScripts">
+        <methods>
+          <include name="testCaseName"/>
+          <include name="killIEBrowser"/>
+          <include name="removeAssertMessage"/>
+          <include name="quit"/>
+          <include name="submitAVCForm" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testscripts.GPP_AVCScripts -->
+    </classes>
+  </test> <!-- Tests on Chrome(failed) -->
+</suite> <!-- Failed suite [Adhoc Run Test Suite] -->

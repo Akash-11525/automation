@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3">
+
+<test name="Test on Chrome">
+<parameter name="browser" value="Chrome"/>
+<parameter name="environment" value="TEST"/>
+<parameter name="clientName" value="PCSE"/>
+<parameter name="evidence" value="False"/>
+
+<classes>
+<class name="testscripts.OP_GOS3VoucherScripts">
+<methods>
+<include name="GOS3VoucherSuccessfulFlow"/>
+</methods>
+<!-- </class>
+<class name="testscripts.XML_StagingCRMScripts">
+<methods>
+<include name ="PMS_GOS1_1183"/>
+</methods>
+</class>
+<class name="testscripts.XML_BS_StagingCRMScripts">
+<methods>
+<include name ="BS_GOS5_7171"/>
+</methods> -->
+</class>
+<!-- class name="testscripts.OP_GOS3ClaimScripts">
+<methods>
+<include name="underReadingAndDistancePrescriptionIsPassed"/>
+<include name="underreadingAndPrescriptionIsPassedwithVoucherE"/>
+<include name="claimErrorValidationErrorOnPatientAge"/>
+</methods>
+</class>
+<class name="testscripts.OP_GOS4ClaimScripts">
+<methods>
+<include name="GOS4Claim_UnderReadingAndDistancePrescTag"/>
+<include name="GOS4Claim_UnderReadingPrescSPHNotMoreThan6Dioters"/>
+</methods>
+</class>
+<class name="testscripts.OP_GOS5ClaimScripts">
+<methods>
+<include name="validateDomiciliaryVisitFeeForSecondAddress"/>
+<include name="validateClaimForSightTestDateWithinOneYearAndMore"/>
+</methods>
+</class-->
+</classes>
+</test>
+</suite>

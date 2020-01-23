@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCSE-OP-GOS3-Voucher-Only-Response-v2 Conversation-ID="DA47E9CB-E314-4011-A1A3-6E2CE9252A24" Message-Date-Time="2016-09-28T14:02:55" Message-Revision="0.3" xmlns="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS PCSE-OP-PMS-GOS3-Voucher-Only-Response-v2.xsd">
+	<Voucher-Only-Response-Message Landing-Status="Validated" Unique-Claim-Response-ID="BC78851C-D216-4B2C-866B-020A89807F2A">
+		<Voucher-Details Unique-Message-ID="13D95847-D1BF-4E06-AE2C-E7B2BABB3149" Voucher-Code="ABC1234D" Authorisation-Code="1234POIU"/>
+	</Voucher-Only-Response-Message>
+</PCSE-OP-GOS3-Voucher-Only-Response-v2>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3">
+<parameter name="browser" value="Chrome"/>
+<parameter name="environment" value="Test"/>
+<parameter name="clientName" value="PCSE"/>
+<test name="Tests on Cohorts">
+<classes>
+<class name="testscripts.CS.ResultsScripts"/>
+</classes>
+</test>
+</suite>

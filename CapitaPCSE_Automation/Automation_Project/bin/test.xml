@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite" thread-count="1" verbose="3">
+    <!-- This parameter will be passed to every test in this suite -->
+   <parameter name="browser" value="Chrome"/>
+<parameter name="environment" value="TEST"/>
+ <parameter name="clientName" value="PCSE"/>>
+  <test name="Test two">
+        <!-- This parameter will be passed this test only -->
+       <classes>
+            <class name="testscripts.CallRecallScripts">
+                <methods>
+                    <include name="downloadCSVWeek4" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test one">
+	 <parameter name="browser" value="Internet Explorer" />
+	 <parameter name="environment" value="TESTCRM" />
+        <classes>
+            <class name="testscripts.ResultsScripts">
+                <methods>
+                  <include name="VerifyTestLabFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+   
+   </suite>

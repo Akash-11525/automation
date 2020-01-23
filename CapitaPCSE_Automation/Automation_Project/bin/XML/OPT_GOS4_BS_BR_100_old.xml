@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><PCSE-OP-BS-GOS4-Claim-v2 xmlns="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Conversation-ID="80ACEAAF-710F-42DF-AD3C-A77505A5A93E" Message-Date-Time="2016-09-29T19:01:23" Message-Revision="0.1" PSK="0CAAFF54-05DC-44E4-A20F-1EDE0044A542" xsi:schemaLocation="http://www.capita.co.uk/pcse/schema/ophthalmicpayments/GOS PCSE-OP-BS-GOS4-Claim-v2.xsd">
+<Claim-Message Claim-Date-Time="2016-09-29T19:01:23" Claim-Version-ID="GOS1~01.18~1.0" I-Code="ABC-123-233330000001" P-Code="743A51F2-2005-476C-9FF6-5C22B01463DC" Scanned-Claim-Reference="pcs_scan_200000001_1609291901" Unique-Message-ID="AEF3DCD2-CEC3-00F3-842E-68C297BE0423">
+<Part1-Patient-Details>
+	<Patient-Details>
+		<Title>Mr.</Title>
+		<DOB>01012010</DOB>
+		<Surname>Otter</Surname>
+		<First-Names>Henry</First-Names>
+		<Previous-Surname>Otter-Mann</Previous-Surname>
+		<Address>61~The Holt~Rivermouth~Cumbria</Address>
+		<PostCode>N/A</PostCode>
+		<NHSNumber>0123455678</NHSNumber>
+		<NINumber>AA123456Z</NINumber>
+	</Patient-Details>
+	
+<Last-Sight-Test>
+	<DateOfLastTest>08082015</DateOfLastTest>
+	<FirstTest>N</FirstTest>
+	<NotKnown>Y</NotKnown>
+</Last-Sight-Test>
+
+<Eligibility>
+	<Eligibility-Evidence>
+		<Seen>Y</Seen>
+		<NotSeen>N</NotSeen>
+</Eligibility-Evidence>
+
+<Eligibility-Age-Bracket>
+	<Under16>Y</Under16>
+	<Under18andLocalAuthorityCare>N</Under18andLocalAuthorityCare>
+	<FullTimeStudent16_17_18>N</FullTimeStudent16_17_18>
+</Eligibility-Age-Bracket>
+
+	<Eligibility-Prisoner>N</Eligibility-Prisoner>
+	<Eligibility-Establishment-Name>Name</Eligibility-Establishment-Name>
+	<Eligibility-Establishment-Town>Town</Eligibility-Establishment-Town>
+<Eligibility-Benefit>
+	<IReceive>N</IReceive>
+	<MyPartnerReceives>N</MyPartnerReceives>
+
+	<ReceiveIncomeSupport>N</ReceiveIncomeSupport>
+	<ReceiveUniversal>N</ReceiveUniversal>
+	<ReceivePensionCreditGuarantee>N</ReceivePensionCreditGuarantee>
+	<ReceiveIncomeJobseekersAllowance>N</ReceiveIncomeJobseekersAllowance>
+	<ReceiveEmploymentSupportAllowance>N</ReceiveEmploymentSupportAllowance>
+	<ReceiveTaxCredit>N</ReceiveTaxCredit>
+	<Person-Getting-Benefit-Name>ALOTTA OTTER</Person-Getting-Benefit-Name>
+	<Person-Getting-Benefit-NINumber>AA123456A</Person-Getting-Benefit-NINumber>
+	<Person-Getting-Benefit-DOB>01111972</Person-Getting-Benefit-DOB>
+</Eligibility-Benefit>
+	<Eligibility-Valid-HC2>N</Eligibility-Valid-HC2>
+	<Eligibility-Valid-HC3>N</Eligibility-Valid-HC3>
+	<Eligibility-HC-Certificate-Number-Prefix>1</Eligibility-HC-Certificate-Number-Prefix>
+	<Eligibility-HC-Certificate-Number>1234567</Eligibility-HC-Certificate-Number>
+	<Eligibility-HC3-Voucher-Reduction-Pounds>000</Eligibility-HC3-Voucher-Reduction-Pounds>
+	<Eligibility-HC3-Voucher-Reduction-Pence>00</Eligibility-HC3-Voucher-Reduction-Pence>
+	<Eligibility-Prescribed-Complex-Lenses>N</Eligibility-Prescribed-Complex-Lenses>
+	<Explain-Loss-Damage>Y</Explain-Loss-Damage>
+	<Loss-Damage-Explanation>A marauding shih tzu ate them</Loss-Damage-Explanation>
+</Eligibility>
+</Part1-Patient-Details>
+<Part2-Patient-Declaration>
+	<Declaration>
+		<Patient>Y</Patient>
+		<Parent>N</Parent>
+		<CarerGuardian>N</CarerGuardian>
+		<Patient-Declaration-Bulk-Scan-Signature-Reference>pcs_scan_200000004_1610021901</Patient-Declaration-Bulk-Scan-Signature-Reference>
+		<Patient-Declaration-Date>18092016</Patient-Declaration-Date>
+		<Patient-Declaration-Name>H OTTER</Patient-Declaration-Name>
+		<Patient-Declaration-Address>61 THE HOLT RIVERMOUTH~CUMBRIA</Patient-Declaration-Address>
+		<Patient-Declaration-Postcode>CA199QR</Patient-Declaration-Postcode>
+	</Declaration>
+</Part2-Patient-Declaration>
+<Part3-NHS-England-Approval>
+	<Approved>Y</Approved>
+	<NotApproved>N</NotApproved>
+	<Approval-Code>123456789012</Approval-Code>
+</Part3-NHS-England-Approval>
+<Part4-Patient-Declaration>
+	<DistancePair>N</DistancePair>
+	<NearPair>Y</NearPair>
+	<BifiocalContactLenses>N</BifiocalContactLenses>
+	<Repaired>Y</Repaired>
+	<Replaced>N</Replaced>
+	<Patient>Y</Patient>
+	<Parent>N</Parent>
+	<CarerGuardian>N</CarerGuardian>
+	<Patient-Declaration-Bulk-Scan-Signature-Reference>pcs_scan_200000004_1610021901</Patient-Declaration-Bulk-Scan-Signature-Reference>
+	<Patient-Declaration-Date>28092016</Patient-Declaration-Date>
+	<Patient-Declaration-Name>H OTTER</Patient-Declaration-Name>
+	<Patient-Declaration-Address/>
+	<Patient-Declaration-PostCode>SE116ST</Patient-Declaration-PostCode>
+</Part4-Patient-Declaration>
+
+
+<Part5-Supplier-Declaration>
+	<Repaired>Y</Repaired>
+	<Replaced>N</Replaced>
+<SpecialProcessing>
+	<SpecialProcessingYN>N</SpecialProcessingYN>
+	<SpecialProcessing-Text/>
+</SpecialProcessing>
+
+	<DistancePair>N</DistancePair>
+	<NearPair>Y</NearPair>
+	<BifocalVarifocal>N</BifocalVarifocal>
+<Prescription>
+	<Right-Eye>
+		<Distance>
+			<Sph-PosNeg>-</Sph-PosNeg>
+			<Sph-Integral>0</Sph-Integral>
+			<Sph-Fractional>00</Sph-Fractional>
+			<Cyl-PosNeg>-</Cyl-PosNeg>
+			<Cyl-Integral>5</Cyl-Integral>
+			<Cyl-Fractional>25</Cyl-Fractional>
+			<Axis>0</Axis>
+			<Prism>0</Prism>
+			<Base>0</Base>
+		</Distance>
+		<Near>
+			<Sph-Integral>9</Sph-Integral>
+			<Sph-Fractional>25</Sph-Fractional>
+			<Prism>1</Prism>
+			<Base>1</Base>
+		</Near>
+	</Right-Eye>
+	<Left-Eye>
+		<Distance>
+			<Sph-PosNeg>-</Sph-PosNeg>
+			<Sph-Integral>0</Sph-Integral>
+			<Sph-Fractional>00</Sph-Fractional>
+			<Cyl-PosNeg>-</Cyl-PosNeg>
+			<Cyl-Integral>5</Cyl-Integral>
+			<Cyl-Fractional>75</Cyl-Fractional>
+			<Axis>0</Axis>
+			<Prism>0</Prism>
+			<Base>0</Base>
+		</Distance>
+		<Near>
+			<Sph-Integral>8</Sph-Integral>
+			<Sph-Fractional>75</Sph-Fractional>
+			<Prism>1</Prism>
+			<Base>1</Base>
+		</Near>
+	</Left-Eye>
+</Prescription>
+
+	<Voucher>
+		<Voucher-Type>
+		<Voucher-Type>B</Voucher-Type>
+		<Complex>N</Complex>
+		<Prism>N</Prism>
+		<Tint>N</Tint>
+		</Voucher-Type>
+		<VoucherValuePounds>100</VoucherValuePounds>
+		<VoucherValuePence>00</VoucherValuePence>
+</Voucher>
+
+		<LensCL>
+		<Right>Y</Right>
+		<Left>N</Left>
+		<Both>N</Both>
+		<ValuePounds>22</ValuePounds>
+		<ValuePence>25</ValuePence>
+		</LensCL>
+
+		<Frame>
+		<Front>Y</Front>
+		<Side>N</Side>
+		<Whole>N</Whole>
+		<ValuePounds>12</ValuePounds>
+		<ValuePence>45</ValuePence>
+		</Frame>
+<Suppliments>
+	<Prism>0</Prism>
+	<Tint>0</Tint>
+	<SmallGlasses>N</SmallGlasses>
+	<Small-Glasses-Measurement>22</Small-Glasses-Measurement>
+	<Special-Facial-Characteristics>N</Special-Facial-Characteristics>
+	<Prism-Controlled-Bifocals>N</Prism-Controlled-Bifocals>
+	<ValuePounds>00</ValuePounds>
+	<ValuePence>00</ValuePence>
+</Suppliments>
+<Claim>
+	<Voucher>
+		<Pounds>59</Pounds>
+		<Pence>30</Pence>
+	</Voucher>
+	<Parts>
+		<Pounds>34</Pounds>
+		<Pence>70</Pence>
+	</Parts>
+		<RetailCost>
+		<Pounds>100</Pounds>
+		<Pence>00</Pence>
+	</RetailCost>
+<PatientContribution>
+	<Pounds>00</Pounds>
+	<Pence>00</Pence>
+</PatientContribution>
+<TotalClaim>
+	<Pounds>34</Pounds>
+	<Pence>70</Pence>
+	</TotalClaim>
+</Claim>
+
+<Declaration>
+	<Date>29092016</Date>
+	<Suppliers-Signature-Bulk-Scan-Signature-Reference>pcs_scan_200000004_1610021901</Suppliers-Signature-Bulk-Scan-Signature-Reference>
+	<Suppliers-Declaration-Name>LONDON COMMISSIONING REGION</Suppliers-Declaration-Name>
+	<Suppliers-Name>LONDON COMMISSIONING REGION</Suppliers-Name>
+	<Organisation-Code>TP19Y</Organisation-Code>
+</Declaration>
+</Part5-Supplier-Declaration>
+
+</Claim-Message>
+</PCSE-OP-BS-GOS4-Claim-v2>

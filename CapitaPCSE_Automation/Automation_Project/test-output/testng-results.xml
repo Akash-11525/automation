@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Adhoc Run Test Suite" duration-ms="20500" started-at="2019-12-13T09:47:47Z" finished-at="2019-12-13T09:48:07Z">
+    <groups>
+      <group name="PCSE">
+        <method signature="GPP_AVCScripts.submitAVCForm(java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="submitAVCForm" class="testscripts.GPP_AVCScripts"/>
+      </group> <!-- PCSE -->
+      <group name="GPP">
+        <method signature="GPP_AVCScripts.submitAVCForm(java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="submitAVCForm" class="testscripts.GPP_AVCScripts"/>
+      </group> <!-- GPP -->
+      <group name="Regression">
+        <method signature="GPP_AVCScripts.submitAVCForm(java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="submitAVCForm" class="testscripts.GPP_AVCScripts"/>
+      </group> <!-- Regression -->
+      <group name="CloneSanity">
+        <method signature="GPP_AVCScripts.submitAVCForm(java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="submitAVCForm" class="testscripts.GPP_AVCScripts"/>
+      </group> <!-- CloneSanity -->
+    </groups>
+    <test name="Tests on Chrome" duration-ms="20500" started-at="2019-12-13T09:47:47Z" finished-at="2019-12-13T09:48:07Z">
+      <class name="testscripts.GPP_AVCScripts">
+        <test-method status="PASS" signature="killIEBrowser()[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="killIEBrowser" is-config="true" duration-ms="3072" started-at="2019-12-13T15:17:47Z" finished-at="2019-12-13T15:17:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killIEBrowser -->
+        <test-method status="PASS" signature="testCaseName(org.testng.ITestContext)[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="testCaseName" is-config="true" duration-ms="1" started-at="2019-12-13T15:17:50Z" finished-at="2019-12-13T15:17:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6a175569]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseName -->
+        <test-method status="FAIL" signature="submitAVCForm(java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="submitAVCForm" duration-ms="17308" started-at="2019-12-13T15:17:50Z" finished-at="2019-12-13T15:18:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PCSE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Steps Failed (1)
+org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'IN-MH1DSW101115', ip: '172.16.206.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.14393 x86_64), platform=ANY}]
+Session ID: 5e1e4512e207b493f3d96b2b347b9fc3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Steps Failed (1)
+org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'IN-MH1DSW101115', ip: '172.16.206.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.14393 x86_64), platform=ANY}]
+Session ID: 5e1e4512e207b493f3d96b2b347b9fc3
+	at reporting.ListenerClass.onTestFailure(ListenerClass.java:137)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1686)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1670)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitAVCForm -->
+        <test-method status="PASS" signature="quit(java.lang.String)[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="quit" is-config="true" duration-ms="8" started-at="2019-12-13T15:18:07Z" finished-at="2019-12-13T15:18:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="removeAssertMessage()[pri:0, instance:testscripts.GPP_AVCScripts@10bdf5e5]" name="removeAssertMessage" is-config="true" duration-ms="2" started-at="2019-12-13T15:18:07Z" finished-at="2019-12-13T15:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeAssertMessage -->
+      </class> <!-- testscripts.GPP_AVCScripts -->
+    </test> <!-- Tests on Chrome -->
+  </suite> <!-- Adhoc Run Test Suite -->
+</testng-results>
